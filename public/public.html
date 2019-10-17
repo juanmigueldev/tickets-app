@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Public screen</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<!-- <body class="container"> -->
+
+<body>
+
+    <table>
+        <tr>
+            <td valign="middle" class="current-ticket">
+                <span id="lblTicket1" class="current-ticket-number">Not ticket attending yet</span>
+                <br>
+                <span id="lblDesktop1" class="current-ticket-desktop"></span>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <span id="lblTicket2" class="secondary-ticket"></span>
+                            <br>
+                            <span id="lblDesktop2"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="lblTicket3" class="secondary-ticket"></span>
+                            <br>
+                            <span id="lblDesktop3"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="lblTicket4" class="secondary-ticket"></span>
+                            <br>
+                            <span id="lblDesktop4"></span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+    <script src="socket.io/socket.io.js"></script>
+    <script src="js/tickets/ticket-queue.js"></script>
+</body>
+</html>
